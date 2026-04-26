@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixue Việt Nam - Thực Đơn</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="phanheader">
+        <div class="bannerlon">
+            <img src="hinhanh/banner.png" alt="Banner Mixue" class="anhbanner">
+            <img src="hinhanh/logo.png" alt="Logo Mixue" class="logomixue">
+        </div>
+    </header>
+
+    <nav class="thanhnav">
+        <div class="containerchinh">
+            <ul class="menuchinh">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="thucdon.html">Thực đơn</a></li>
+                <li><a href="donhang.html">Giỏ hàng</a></li>
+                <li><a href="cuahang.html">Cửa hàng Mixue gần đây</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="sanphambanchay" id="thucdon">
+        <div class="containerchinh">
+            <h2 class="tieudephan">THỰC ĐƠN MIXUE</h2>
+
+            <!-- Phần bộ lọc -->
+            <div class="thanhcongculoc">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm tên sản phẩm..." onkeyup="locSanPham()">
+                <select id="categorySelect" onchange="locSanPham()">
+                    <option value="all">Tất cả danh mục</option>
+                    <option value="kem">Chuyên mục Kem</option>
+                    <option value="trasua">Trà sữa</option>
+                    <option value="nuocep">Trà hoa quả / Nước ép</option>
+                </select>
+            </div>
+
+            <div class="gridsanpham">
+                <!-- Sản phẩm 1 -->
+                <div class="itemsanpham" data-category="kem">
+                    <img src="hinhanh/sanpham/kemhongtra.png" alt="Kem Mixue" class="anhsanpham"
+                        onerror="this.src='hinhanh/logo.png'">
+                    <div class="infosanpham">
+                        <h3 class="tensanpham">Kem hồng trà Mixue</h3>
+                        <p class="giatien">25.000 VNĐ</p>
+                        <span class="phanloai">Kem</span>
+                        <div class="cacnut">
+                            <button class="btnthemgio" onclick="themVaoGio('Kem hồng trà Mixue')"> Thêm vào giỏ</button>
+                            <button class="btndatngay" onclick="datNgay('Kem hồng trà Mixue')"> Đặt ngay</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sản phẩm 2 -->
+                <div class="itemsanpham" data-category="trasua">
+                    <img src="hinhanh/sanpham/trasuatrantrauduongden.png" alt="Trà sữa trân trâu đường đen Mixue"
+                        class="anhsanpham" onerror="this.src='hinhanh/logo.png'">
+                    <div class="infosanpham">
+                        <h3 class="tensanpham">Trà sữa trân châu đường đen</h3>
+                        <p class="giatien">45.000 VNĐ</p>
+                        <span class="phanloai">Trà sữa </span>
+                        <div class="cacnut">
+                            <button class="btnthemgio" onclick="themVaoGio('Trà sữa trân châu đường đen')"> Thêm vào
+                                giỏ</button>
+                            <button class="btndatngay" onclick="datNgay('Trà sữa trân châu đường đen')"> Đặt
+                                ngay</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sản phẩm 3 -->
+                <div class="itemsanpham" data-category="nuocep">
+                    <img src="hinhanh/sanpham/nuocchanhtuoilanh.png" alt="Nước ép Mixue" class="anhsanpham"
+                        onerror="this.src='hinhanh/logo.png'">
+                    <div class="infosanpham">
+                        <h3 class="tensanpham">Nước chanh tươi lạnh</h3>
+                        <p class="giatien">20.000 VNĐ</p>
+                        <span class="phanloai">Nước ép</span>
+                        <div class="cacnut">
+                            <button class="btnthemgio" onclick="themVaoGio('Nước chanh tươi lạnh')"> Thêm vào
+                                giỏ</button>
+                            <button class="btndatngay" onclick="datNgay('Nước chanh tươi lạnh')"> Đặt ngay</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sản phẩm 4 -->
+                <div class="itemsanpham" data-category="kem">
+                    <img src="hinhanh/sanpham/sundaedautay.png" alt="Kem Mixue" class="anhsanpham"
+                        onerror="this.src='hinhanh/logo.png'">
+                    <div class="infosanpham">
+                        <h3 class="tensanpham">Supper Sundae Dâu Tây</h3>
+                        <p class="giatien">25.000 VNĐ</p>
+                        <span class="phanloai">Kem</span>
+                        <div class="cacnut">
+                            <button class="btnthemgio" onclick="themVaoGio('Supper Sundae Dâu Tây')"> Thêm vào
+                                giỏ</button>
+                            <button class="btndatngay" onclick="datNgay('Supper Sundae Dâu Tây')"> Đặt ngay</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sản phẩm 5 -->
+                <div class="itemsanpham" data-category="kem">
+                    <img src="hinhanh/sanpham/kembonmua.png" alt="Kem Mixue" class="anhsanpham"
+                        onerror="this.src='hinhanh/logo.png'">
+                    <div class="infosanpham">
+                        <h3 class="tensanpham">Trà kem bốn mùa</h3>
+                        <p class="giatien">30.000 VNĐ</p>
+                        <span class="phanloai">Kem</span>
+                        <div class="cacnut">
+                            <button class="btnthemgio" onclick="themVaoGio('Trà kem bốn mùa')"> Thêm vào giỏ</button>
+                            <button class="btndatngay" onclick="datNgay('Trà kem bốn mùa')">Đặt ngay</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sản phẩm 6 -->
+                <div class="itemsanpham" data-category="trasua">
+                    <img src="hinhanh/sanpham/duongchicamlo.png" alt="Trà sữa" class="anhsanpham"
+                        onerror="this.src='hinhanh/logo.png'">
+                    <div class="infosanpham">
+                        <h3 class="tensanpham">Dương Chi Cam Lộ</h3>
+                        <p class="giatien">35.000 VNĐ</p>
+                        <span class="phanloai">Trà sữa</span>
+                        <div class="cacnut">
+                            <button class="btnthemgio" onclick="themVaoGio('Dương Chi Cam Lộ')"> Thêm vào giỏ</button>
+                            <button class="btndatngay" onclick="datNgay('Dương Chi Cam Lộ')">Đặt ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="phanduoitrang">
+        <div class="containerchinh">
+            <div class="infofooter">
+                <h3>Mixue PhuongDev</h3>
+                <p><strong>Hotline:</strong> 0393356581</p>
+                <p><strong>Email:</strong> phuongisdev@gmail.com</p>
+                <p><strong>Địa chỉ:</strong> Đông Thọ, Sơn Dương, Tuyên Quang</p>
+            </div>
+            <div class="copyright">
+                <p>© 2026 Mixue PhuongDev. Công ty đến từ Campuchia</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

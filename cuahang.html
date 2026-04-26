@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixue Việt Nam - Cửa Hàng</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="phanheader">
+        <div class="bannerlon">
+            <img src="hinhanh/banner.png" alt="Banner Mixue" class="anhbanner">
+            <img src="hinhanh/logo.png" alt="Logo Mixue" class="logomixue">
+        </div>
+    </header>
+
+    <nav class="thanhnav">
+        <div class="containerchinh">
+            <ul class="menuchinh">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="thucdon.html">Thực đơn</a></li>
+                <li><a href="donhang.html">Giỏ hàng</a></li>
+                <li><a href="cuahang.html">Cửa hàng Mixue gần đây</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="phancuahang">
+        <div class="containerchinh">
+            <h2 class="tieudephan">HỆ THỐNG CỬA HÀNG MIXUE</h2>
+            <div class="thanhcongculoc">
+                <input type="text" placeholder="Nhập tên đường, quận, huyện..." id="timkiemcuahang">
+                <button class="btnthemgio">Tìm kiếm</button>
+            </div>
+            <div class="gridcuahang">
+                <div class="itemcuahang">
+                    <h3>Mixue Đông Thọ</h3>
+                    <p><strong>Địa chỉ:</strong> Khu 2, Đông Thọ, Sơn Dương, Tuyên Quang</p>
+                    <p><strong>Giờ mở cửa:</strong> 08:00 - 22:30</p>
+                    <button class="btnthemgio" onclick="window.open('https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Mixue Khu 2, Đông Thọ, Sơn Dương, Tuyên Quang'))">Chỉ đường</button>
+                </div>
+                <div class="itemcuahang">
+                    <h3>Mixue Cầu Giấy</h3>
+                    <p><strong>Địa chỉ:</strong> 123 Xuân Thủy, Cầu Giấy, Hà Nội</p>
+                    <p><strong>Giờ mở cửa:</strong> 08:00 - 23:00</p>
+                    <button class="btnthemgio" onclick="window.open('https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Mixue 123 Xuân Thủy, Cầu Giấy, Hà Nội'))">Chỉ đường</button>
+                </div>
+                <div class="itemcuahang">
+                    <h3>Mixue Hai Bà Trưng</h3>
+                    <p><strong>Địa chỉ:</strong> 456 Bạch Mai, Hai Bà Trưng, Hà Nội</p>
+                    <p><strong>Giờ mở cửa:</strong> 07:30 - 22:30</p>
+                    <button class="btnthemgio" onclick="window.open('https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Mixue 456 Bạch Mai, Hai Bà Trưng, Hà Nội'))">Chỉ đường</button>
+                </div>
+                <div class="itemcuahang">
+                    <h3>Mixue Quận 1</h3>
+                    <p><strong>Địa chỉ:</strong> 789 Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh</p>
+                    <p><strong>Giờ mở cửa:</strong> 08:00 - 23:30</p>
+                    <button class="btnthemgio" onclick="window.open('https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Mixue 789 Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh'))">Chỉ đường</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="phanduoitrang">
+        <div class="containerchinh">
+            <div class="infofooter">
+                <h3>Mixue PhuongDev</h3>
+                <p><strong>Hotline:</strong> 0393356581</p>
+                <p><strong>Email:</strong> phuongisdev@gmail.com</p>
+                <p><strong>Địa chỉ:</strong> Đông Thọ, Sơn Dương, Tuyên Quang</p>
+            </div>
+            <div class="copyright">
+                <p>© 2026 Mixue PhuongDev. Công ty đến từ Campuchia</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,728 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    margin-top: 0;
+}
+
+.containerchinh {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.phanheader {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
+
+.bannerlon {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.anhbanner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logovaslogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.logomixue {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 160px;
+    height: auto;
+    z-index: 10;
+}
+
+.thanhnav {
+    background-color: #e74c3c;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menuchinh {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.menuchinh li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.menuchinh li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.tieudephan {
+    text-align: center;
+    font-size: 2rem;
+    color: #e74c3c;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    border-bottom: 3px solid #e74c3c;
+    display: inline-block;
+    width: 100%;
+}
+
+.sanphambanchay {
+    padding: 30px 0;
+    background-color: #f8f9fa;
+}
+
+.gridsanpham {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.itemsanpham {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.itemsanpham:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.anhsanpham {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    max-height: 260px;
+    margin: 18px auto 8px;
+    object-fit: contain;
+}
+
+.infosanpham {
+    padding: 20px;
+    text-align: center;
+}
+
+.tensanpham {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.giatien {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.phanloai {
+    display: inline-block;
+    background-color: #f8f9fa;
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.cacnut {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btnthemgio,
+.btndatngay {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btnthemgio {
+    background-color: #f8f9fa;
+    color: #e74c3c;
+    border: 2px solid #e74c3c;
+}
+
+.btnthemgio:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btndatngay {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btndatngay:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.visaochonmixue {
+    padding: 30px 0;
+    background-color: white;
+}
+
+.gridlydo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.boxlydo {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.boxlydo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.iconlydo {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.boxlydo h3 {
+    color: #e74c3c;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.boxlydo p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.phandanhgia {
+    padding: 30px 0;
+    background-color: #f8f9fa;
+    overflow: hidden;
+}
+
+.carouselfeedback {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.listfeedback {
+    display: flex;
+    gap: 30px;
+    animation: scrollleft 20s linear infinite;
+}
+
+.itemfeedback {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.itemfeedback:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.avatarkhach {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.tennguoidanhgia {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ratingsao {
+    color: #ffd700;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.contentfeedback {
+    color: #666;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+@keyframes scrollleft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.phanduoitrang {
+    background-color: #c0392b;
+    color: white;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+
+.infofooter {
+    margin-bottom: 20px;
+}
+
+.infofooter h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.infofooter p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+/* Thanh công cụ lọc và tìm kiếm */
+.thanhcongculoc {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.thanhcongculoc input,
+.thanhcongculoc select {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.thanhcongculoc input:focus,
+.thanhcongculoc select:focus {
+    border-color: #e74c3c;
+}
+
+.thanhcongculoc input {
+    width: 300px;
+    max-width: 100%;
+}
+
+.thanhcongculoc select {
+    cursor: pointer;
+}
+
+/* =========================================
+   PHẦN Giỏ hàng (GIỎ HÀNG)
+========================================= */
+.phandonhang {
+    padding: 30px 0;
+    background-color: #f8f9fa;
+}
+
+.khungdonhang {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bangdonhang {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.bangdonhang th,
+.bangdonhang td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.bangdonhang th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: bold;
+}
+
+.cot-sanpham {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left !important;
+}
+
+.cot-sanpham img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.input-soluong {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-xoa {
+    background-color: transparent;
+    color: #e74c3c;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-xoa:hover {
+    color: #c0392b;
+    transform: scale(1.1);
+}
+
+.tongketdonhang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+}
+
+.tongketdonhang p {
+    font-size: 1.2rem;
+}
+
+.tongtien {
+    color: #e74c3c;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn-thanhtoan {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+}
+
+/* =========================================
+   PHẦN CỬA HÀNG
+========================================= */
+.phancuahang {
+    padding: 30px 0;
+    background-color: #f8f9fa;
+}
+
+.gridcuahang {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.itemcuahang {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.itemcuahang:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.itemcuahang h3 {
+    color: #e74c3c;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.itemcuahang p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.itemcuahang .btnthemgio {
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* =========================================
+   PHẦN LIÊN HỆ
+========================================= */
+.phanlienhe {
+    padding: 30px 0;
+    background-color: #fff;
+}
+
+.gridlienhe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.thongtinlienhe,
+.formlienhe {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thongtinlienhe h3,
+.formlienhe h3 {
+    color: #e74c3c;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.chitietlienhe {
+    margin-top: 20px;
+}
+
+.chitietlienhe p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.nhominput {
+    margin-bottom: 20px;
+}
+
+.nhominput label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nhominput input,
+.nhominput textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.nhominput input:focus,
+.nhominput textarea:focus {
+    border-color: #e74c3c;
+    outline: none;
+}
+
+.btn-gui {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+}
+
+/* =========================================
+   MODAL THANH TOÁN
+========================================= */
+.modal-overlay {
+    display: none; /* Ẩn mặc định */
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.tieude-modal {
+    color: #e74c3c;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.btn-dong-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.btn-dong-modal:hover {
+    color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+    .menuchinh {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menuchinh li a {
+        padding: 8px 12px;
+        font-size: 1rem;
+    }
+
+    .slogan {
+        font-size: 1.8rem;
+    }
+
+    .logomixue {
+        width: 110px;
+        top: 12px;
+        left: 12px;
+    }
+
+
+
+    .gridsanpham,
+    .gridlydo {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .itemsanpham,
+    .boxlydo,
+    .itemfeedback {
+        margin: 0 10px;
+    }
+
+    .cacnut {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .tieudephan {
+        font-size: 1.5rem;
+    }
+
+    .thanhcongculoc {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .thanhcongculoc input {
+        width: 100%;
+    }
+
+    .gridlienhe {
+        grid-template-columns: 1fr;
+    }
+
+    .bangdonhang th:nth-child(2),
+    .bangdonhang td:nth-child(2),
+    .bangdonhang th:nth-child(3),
+    .bangdonhang td:nth-child(3) {
+        display: none;
+    }
+
+    .tongketdonhang {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerchinh {
+        padding: 0 15px;
+    }
+
+    .phanheader {
+        height: 200px;
+    }
+
+    .slogan {
+        font-size: 1.3rem;
+    }
+
+    .logomixue {
+        width: 60px;
+    }
+
+    .itemfeedback {
+        min-width: 250px;
+        padding: 20px;
+    }
+}
